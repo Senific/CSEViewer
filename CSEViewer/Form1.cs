@@ -186,6 +186,32 @@ namespace CSEViewer
                     e.Appearance.BackColor = Color.Orange;
                 }  
             }
+            else if (e.Column.FieldName == "Value")
+            {
+                double value = Convert.ToDouble(currentView.GetRowCellValue(e.RowHandle, "Value"));
+                double price = Convert.ToDouble(currentView.GetRowCellValue(e.RowHandle, "price"));
+                if (double.IsInfinity(value) | double.IsNaN(value))
+                {
+                    e.Appearance.BackColor = Color.Gray;
+                    return;
+                }
+
+                if(price / value <= 1f)
+                {
+                    //Fair price
+                    e.Appearance.BackColor = Color.LightGreen;
+                }
+                else if (price / value <= 2/3f)
+                {
+                    //Good Safe Price
+                        e.Appearance.BackColor = Color.Green;
+                }
+                else 
+                {
+                    //Bad price
+                    e.Appearance.BackColor = Color.Orange;
+                } 
+            }
         }
 
         private void gridControl1_Click(object sender, EventArgs e)
