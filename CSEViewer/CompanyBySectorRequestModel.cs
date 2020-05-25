@@ -57,6 +57,7 @@ namespace CSEViewer
         }
         public double PNAVPS {  get { return price /NAVPS ; } } 
         public double Value { get { return EPS * (8.5 + 2 * EPSGR); } }
+        public double PV { get { return price / Value; } } 
         //------------------------
         public double Investment { get; set;  }
         public double Shares { get { return Investment / price; } }

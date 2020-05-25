@@ -52,6 +52,7 @@
             this.txtInvestment = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtInvestment.Properties)).BeginInit();
@@ -91,7 +92,8 @@
             this.gridColumn11,
             this.gridColumn12,
             this.gridColumn13,
-            this.gridColumn17});
+            this.gridColumn17,
+            this.gridColumn18});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.BeforePrintRow += new DevExpress.XtraGrid.Views.Base.BeforePrintRowEventHandler(this.gridView1_BeforePrintRow);
@@ -119,7 +121,7 @@
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 16;
+            this.gridColumn2.VisibleIndex = 17;
             this.gridColumn2.Width = 279;
             // 
             // gridColumn3
@@ -152,7 +154,7 @@
             this.gridColumn5.OptionsColumn.AllowEdit = false;
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 8;
+            this.gridColumn5.VisibleIndex = 9;
             this.gridColumn5.Width = 49;
             // 
             // gridColumn6
@@ -162,7 +164,7 @@
             this.gridColumn6.FieldName = "Investment";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 13;
+            this.gridColumn6.VisibleIndex = 14;
             this.gridColumn6.Width = 54;
             // 
             // gridColumn7
@@ -175,7 +177,7 @@
             this.gridColumn7.OptionsColumn.AllowEdit = false;
             this.gridColumn7.OptionsColumn.AllowFocus = false;
             this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 14;
+            this.gridColumn7.VisibleIndex = 15;
             this.gridColumn7.Width = 68;
             // 
             // gridColumn8
@@ -188,7 +190,7 @@
             this.gridColumn8.OptionsColumn.AllowEdit = false;
             this.gridColumn8.OptionsColumn.AllowFocus = false;
             this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 15;
+            this.gridColumn8.VisibleIndex = 16;
             this.gridColumn8.Width = 81;
             // 
             // gridColumn14
@@ -230,7 +232,7 @@
             this.gridColumn9.OptionsColumn.AllowEdit = false;
             this.gridColumn9.OptionsColumn.AllowFocus = false;
             this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 11;
+            this.gridColumn9.VisibleIndex = 12;
             // 
             // gridColumn10
             // 
@@ -251,7 +253,7 @@
             this.gridColumn11.OptionsColumn.AllowEdit = false;
             this.gridColumn11.OptionsColumn.AllowFocus = false;
             this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 10;
+            this.gridColumn11.VisibleIndex = 11;
             this.gridColumn11.Width = 66;
             // 
             // gridColumn12
@@ -262,7 +264,7 @@
             this.gridColumn12.OptionsColumn.AllowEdit = false;
             this.gridColumn12.OptionsColumn.AllowFocus = false;
             this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 12;
+            this.gridColumn12.VisibleIndex = 13;
             this.gridColumn12.Width = 66;
             // 
             // gridColumn13
@@ -275,7 +277,7 @@
             this.gridColumn13.OptionsColumn.AllowEdit = false;
             this.gridColumn13.OptionsColumn.AllowFocus = false;
             this.gridColumn13.Visible = true;
-            this.gridColumn13.VisibleIndex = 9;
+            this.gridColumn13.VisibleIndex = 10;
             // 
             // btnCompanies
             // 
@@ -333,6 +335,18 @@
             this.gridColumn17.Visible = true;
             this.gridColumn17.VisibleIndex = 7;
             // 
+            // gridColumn18
+            // 
+            this.gridColumn18.Caption = "P/V";
+            this.gridColumn18.DisplayFormat.FormatString = "0.00%";
+            this.gridColumn18.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.gridColumn18.FieldName = "PV";
+            this.gridColumn18.Name = "gridColumn18";
+            this.gridColumn18.OptionsColumn.AllowEdit = false;
+            this.gridColumn18.OptionsColumn.AllowFocus = false;
+            this.gridColumn18.Visible = true;
+            this.gridColumn18.VisibleIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,6 +394,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
     }
 }
 
